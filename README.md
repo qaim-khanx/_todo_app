@@ -50,7 +50,7 @@ Install dependencies: Make sure you have Poetry installed. Then run:
 
 bash
 Copy code
-**poetry install**
+*** poetry install ***
     Set up environment variables: Create a .env file in the root directory and add your PostgreSQL database URL:
 
 bash
