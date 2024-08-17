@@ -36,7 +36,7 @@ todo_app/
 └── .git/                     # Git version control directory
 ## Installation
 ### Prerequisites
-- **Python** 3.8+
+**Python** 3.8+
 - **Poetry** for dependency management
 - **PostgreSQL** database
 ### Setup
