@@ -36,65 +36,65 @@ todo_app/
 ├── poetry.lock               # Locked versions of dependencies
 ├── README.md                 # Documentation for the project
 └── .git/                     # Git version control directory
-Installation
-Prerequisites
+## Installation
+### Prerequisites
 Python 3.8+
 Poetry for dependency management
 PostgreSQL database
 Setup
 Clone the repository:
 
-bash
+``` bash
 Copy code
 git clone <repository-url>
 cd todo_app
-Install dependencies:
+## Install dependencies:
 
 Ensure you have Poetry installed, then run:
 
-bash
+``` bash
 Copy code
 poetry install
-Set up environment variables:
+## Set up environment variables:
 
 Create a .env file in the root directory and add your PostgreSQL database URL:
 
-bash
+``` bash
 Copy code
 DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>
-Run the application:
+## Run the application:
 
 Start the FastAPI server with:
 
-bash
+``` bash
 Copy code
 poetry run uvicorn todo_app.main:app --reload
-Access the API
+## Access the API
 Once the server is running, access the API at http://127.0.0.1:8000. You can interact with the API using tools like Postman or through the Swagger UI available at http://127.0.0.1:8000/docs.
 
-Usage
-API Endpoints
-GET /todos/: Retrieve a list of all to-do items.
-POST /todos/: Create a new to-do item.
-PUT /todos/{id}/: Update an existing to-do item.
-DELETE /todos/{id}/: Delete a to-do item.
-PATCH /todos/{id}/complete/: Mark a to-do item as completed.
-Example Request
-Creating a new to-do item:
+## Usage
+### API Endpoints
+- **GET** /todos/: Retrieve a list of all to-do items.
+- **POST** /todos/: Create a new to-do item.
+- **PUT** /todos/{id}/: Update an existing to-do item.
+- **DELETE** /todos/{id}/: Delete a to-do item.
+- **PATCH** /todos/{id}/complete/: Mark a to-do item as completed.
+## Example Request
+### Creating a new to-do item:
 
-bash
+``` bash
 Copy code
 curl -X POST "http://127.0.0.1:8000/todos/" -H "Content-Type: application/json" -d '{
   "content": "Write a README file",
   "is_completed": false
 }'
-Testing
+## Testing
 To run the unit tests, execute:
 
-bash
+``` bash
 Copy code
 poetry run pytest
 This will run all tests located in the tests/ directory to ensure everything is working correctly.
 
-Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
