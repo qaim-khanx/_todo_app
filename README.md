@@ -35,8 +35,7 @@ todo_app/
 ├── README.md                 # Project documentation
 └── .git/                     # Git version control directory
 
-
-### Installation
+# Installation
 
 ### Prerequisites
 **Python** 3.8+
