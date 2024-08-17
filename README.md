@@ -39,57 +39,58 @@ todo_app/
 - **Python** 3.8+
 - **Poetry** for dependency management
 - **PostgreSQL** database
- ## Setup
+### Setup
 Clone the repository:
-
-bash
-Copy code
+```
 git clone <repository-url>
 cd todo_app
-Install dependencies: Make sure you have Poetry installed. Then run:
-
-bash
-Copy code
-*** poetry install ***
-    Set up environment variables: Create a .env file in the root directory and add your PostgreSQL database URL:
-
-bash
-Copy code
+```
+### Install dependencies: 
+Make sure you have Poetry installed. Then run:
+```
+poetry install
+```
+### Set up environment variables:
+Create a .env file in the root directory and add your PostgreSQL database URL:
+```
 DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<database>
-Run the application: Start the FastAPI server:
-
-bash
-Copy code
+```
+### Run the application: 
+Start the FastAPI server:
+```
 poetry run uvicorn todo_app.main:app --reload
-Access the API: The application will be running at http://127.0.0.1:8000. You can interact with the API using tools like Postman or via the built-in Swagger UI at http://127.0.0.1:8000/docs.
+```
+### Access the API: 
+The application will be running at http://127.0.0.1:8000. You can interact with the API using tools like Postman or via the built-in Swagger UI at http://127.0.0.1:8000/docs.
 
-Usage
-API Endpoints
-GET /todos/: Retrieve a list of all to-do items.
-POST /todos/: Create a new to-do item.
-PUT /todos/{id}/: Update an existing to-do item.
-DELETE /todos/{id}/: Delete a to-do item.
-PATCH /todos/{id}/complete/: Mark a to-do item as completed.
-Example Request
+## Usage
+### API Endpoints
+- **GET /todos/:** Retrieve a list of all to-do items.
+- **POST /todos/:** Create a new to-do item.
+- **PUT /todos/{id}/:** Update an existing to-do item.
+- **DELETE /todos/{id}/:** Delete a to-do item.
+- **PATCH /todos/{id}/complete/:** Mark a to-do item as completed.
+
+## Example Request
 Creating a new to-do item:
 
-bash
-Copy code
-```curl -X POST "http://127.0.0.1:8000/todos/" -H "Content-Type: application/json" -d '{
+```
+curl -X POST "http://127.0.0.1:8000/todos/" -H "Content-Type: application/json" -d '{
   "content": "Write a README file",
   "is_completed": false
 }'
 ```
-Testing
+
+## Testing
 To run the tests, simply execute:
 
-bash
-Copy code
+```
 poetry run pytest
+```
 This will run the unit tests located in the tests/ directory.
 
-Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-License
+## License
 This project is licensed under the MIT License.
