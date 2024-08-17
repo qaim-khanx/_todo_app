@@ -35,10 +35,9 @@ todo_app/
 ├── README.md                 # Project documentation
 └── .git/                     # Git version control directory
 
-# Installation
-
+## Installation
 ### Prerequisites
-**Python** 3.8+
+- **Python** 3.8+
 - **Poetry** for dependency management
 - **PostgreSQL** database
 ### Setup
@@ -47,7 +46,7 @@ Clone the repository:
 git clone <repository-url>
 cd todo_app
 ```
-<h2> Install dependencies:</h2> 
+### Install dependencies: 
 Make sure you have Poetry installed. Then run:
 ```
 poetry install
