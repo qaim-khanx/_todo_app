@@ -75,11 +75,11 @@ Creating a new to-do item:
 
 bash
 Copy code
-
-            ```    curl -X POST "http://127.0.0.1:8000/todos/" -H "Content-Type: application/json" -d '{  ```
+```curl -X POST "http://127.0.0.1:8000/todos/" -H "Content-Type: application/json" -d '{
   "content": "Write a README file",
   "is_completed": false
 }'
+```
 Testing
 To run the tests, simply execute:
 
