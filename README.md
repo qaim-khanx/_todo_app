@@ -34,12 +34,12 @@ todo_app/
 ├── poetry.lock               # Locked dependency versions
 ├── README.md                 # Project documentation
 └── .git/                     # Git version control directory
-Installation
-Prerequisites
-Python 3.8+
-Poetry for dependency management
-PostgreSQL database
-Setup
+## Installation
+### Prerequisites
+- **Python** 3.8+
+- **Poetry** for dependency management
+- **PostgreSQL** database
+ ## Setup
 Clone the repository:
 
 bash
@@ -50,8 +50,8 @@ Install dependencies: Make sure you have Poetry installed. Then run:
 
 bash
 Copy code
-poetry install
-Set up environment variables: Create a .env file in the root directory and add your PostgreSQL database URL:
+**poetry install**
+    Set up environment variables: Create a .env file in the root directory and add your PostgreSQL database URL:
 
 bash
 Copy code
