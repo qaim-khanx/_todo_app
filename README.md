@@ -48,7 +48,7 @@ Clone the repository:
 git clone <repository-url>
 cd todo_app
 ```
-### Install dependencies: 
+<h2> Install dependencies:</h2> 
 Make sure you have Poetry installed. Then run:
 ```
 poetry install
